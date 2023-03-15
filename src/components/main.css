@@ -1,0 +1,79 @@
+.heroImage {
+  width: 80%;
+  position: absolute;
+  top: 20%;
+  left: 12%;
+  transform: translateX(-50%);
+  filter: hue-rotate(230deg);
+  transform: rotate(-10deg);
+}
+.heroImageSecond {
+  display: none;
+}
+
+.heroImageThird {
+  display: none;
+}
+
+.heroMotion {
+  top: 95% !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .heroImage {
+    top: 25%;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .heroImage {
+    top: 35%;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .heroImageSecond {
+    display: block;
+    width: 70%;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    filter: hue-rotate(230deg);
+    transform: rotate(-30deg);
+    opacity: 0.3;
+  }
+  .heroImageThird {
+    display: block;
+    width: 70%;
+    position: absolute;
+    top: 40%;
+    left: -50%;
+    filter: hue-rotate(230deg);
+    transform: rotate(30deg);
+    opacity: 0.3;
+  }
+  .heroImage {
+    top: 40%;
+    width: 90%;
+  }
+  .heroMotion {
+    top: 75% !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .heroImage {
+    top: 50%;
+    left: 0%;
+    transform: rotate(-35deg);
+    width: 100%;
+  }
+  .heroMotion {
+    top: 85% !important;
+  }
+  .aboutBoxHide {
+    display: "none" !important;
+  }
+}
